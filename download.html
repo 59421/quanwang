@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>全网聚合V2.31 - 最新安卓版下载</title>
+<meta name="description" content=""> 
+<meta name="keywords" content="全网聚合V2.31 - 最新版下载">
+<link rel="stylesheet" type="text/css" href="./web/g.css">
+<link rel="stylesheet" type="text/css" href="./web/download.css">
+<style type="text/css">@font-face {
+  font-family: 'rbicon';
+  src: url(chrome-extension://dipiagiiohfljcicegpgffpbnjmgjcnf/fonts/rbicon.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+</style></head>
+
+<body class="appdownload-body">
+    <div class="mb-stars"></div>
+    <div class="page-bg-btm mobile"></div>
+    
+    <div class="appdownload-wrap">
+        <div class="appdownload-logo">
+            <img src="./web/logo.png" width="80" height="80">
+            <p class="appname">安卓版全网聚合V2.31</p>
+        </div>
+        <!--提示：页面不存在-->
+        <p class="appdownload-note">1.应用内更新：点击下载后可在系统通知栏查看进度，再点击安装。</p>
+        <p class="appdownload-note">2.微信内下载：点击右上角菜单，选择"在浏览器中打开"，在浏览器中打开并下载安装。</p>
+		<p class="appdownload-note">3.如果应用无法正常使用，请先重启手机，不行再卸载重装。</p>
+        <!--提示：暂不支持的机型-->
+        <div class="appdownload-btns">
+                        <a class="btn item-ios" href="quanwang.apk">
+                <span class="ico ico-ios"></span>
+                <span class="txt">最新版下载</span>
+            </a>
+                                </div>
+
+        <span class="appdownload-check-erwei">查看二维码</span>
+    </div>
+    
+    <div class="appdownload-erwei-overlay" style="display: none;">
+        <div class="container">
+            <p>扫描二维码下载</p>
+            <img src="./web/qrcode.png" width="112" height="112" alt="">
+        </div>
+    </div>
+     
+<script type="text/javascript" src="./web/jquery-1.8.0.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var checkErweiBtn = $(".appdownload-check-erwei"),
+            erweiOverlay = $(".appdownload-erwei-overlay"),
+            erweiOverlayContainer = erweiOverlay.find(".container");
+        checkErweiBtn.click(function(){
+            erweiOverlay.fadeIn();
+        });
+        erweiOverlay.click(function(evt){
+            evt.stopPropagation();
+            if( !$(evt.target).hasClass("container") && !$(evt.target).parents().hasClass("container") ){
+                console.log($(evt.target));
+                $(this).fadeOut();
+            }
+        });
+    });    
+</script>
+
+
+<div id="rememberry__extension__root" style="all: unset;"></div></body></html>
